@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bicep Curl Tracker</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            background-color: #1e1e2f; 
+            color: white; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        h1 { color: #00ff88; }
+        .video-container { 
+            margin-top: 30px; 
+            background: #2b2b40;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+        }
+        img { 
+            border-radius: 10px; 
+            max-width: 100%; 
+        }
+        p { font-size: 1.2rem; color: #a1a1aa; }
+    </style>
+</head>
+<body>
+    <h1>AI Bicep Curl Tracker</h1>
+    <p>Stand back so the camera can see your shoulder, elbow, and wrist.</p>
+    
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" alt="AI Camera Feed">
+    </div>
+</body>
+</html>
